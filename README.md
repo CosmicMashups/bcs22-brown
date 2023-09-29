@@ -1,4 +1,4 @@
-# BROWN: Midterm Period - Assessments
+# BCS22_BROWN: Midterm Period - Assessments
 
 Name of Student: BROWN, Yuri M.
 
