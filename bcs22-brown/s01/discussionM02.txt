@@ -1,0 +1,51 @@
+IPO
+I - Input
+P - Process
+O - Output
+
+Big O Notation
+- running time of program
+
+1. Constant
+- O(1)
+- has the same execution time regardless of the size of the input
+- it depends on the execution of the program
+- used for statements such as if-else, 
+
+Example:
+    myArray = [1, 2, 3, 4, 5] - O(1)
+    a = 6 - O(1)
+    x = 7 - O(1)
+    ==================================
+                        O(3) -> O(1)
+
+2. Linear
+- O(n)
+- loops: for and while
+- factorial: because there is a loop hidden inside
+
+Example:
+    for (i = 0; i < n; i++) - O(n)
+        a[i] = 0            - O(1)
+    ==============================
+                            - O(n+1) = O(1n)
+
+
+3. Logarithmic
+- O(log n)
+
+4. Quadratic
+- O(n^2)
+
+Example:
+    for (x = 0; x < n; x++)                O(n) O(n)    
+        for (i = 0; i < n; i++)            O(n)
+            for (j = 0; j < n; j++)        O(n) O(n^2) ✓
+                k++                        O(1)
+    ==========================================
+                                        O(n^3)
+
+
+NOTES:
+- Always get the highest Big O
+    Example: O(n^2) > O(n) > O(1)

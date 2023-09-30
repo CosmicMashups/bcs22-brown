@@ -1,0 +1,55 @@
+filename:
+	- camelCase -> any programming language
+	- snake_case -> python
+
+Data Structure
+	- Java (IntelliJ)
+
+CLI Commands
+	- Command User Interface
+		- it is a way of interacting with a computer's operating system or software by typing text-based commands into terminal or command prompt
+	- Bash Shell (Bourne Again Shell)
+		- this is widely used command-line shell and scripting language of unix-like operating system
+
+MINGW64
+	- Minimalist GNU for Windows 64-bit
+		- development environment and runtime for creating windows application
+
+Navigation
+	- cd
+		- change directory
+			- it allows us to change the current or working directory we work on
+				syntax: cd [folder/directoryName]
+				example:
+					cd Documents
+					cd s01
+	- ls
+		- list
+			- it allows us to list the files or folders/directories
+				syntax: ls
+				example: ls
+
+File Manipulation
+	- mkdir
+		- make directory
+			- it allows us to create folder/directory
+				syntax: mkdir [folder/directoryName]
+				example: mkdir bcs22
+						 mkdir s01
+	- touch
+		- it allows us to create a file
+			syntax: touch [fileName]
+			example: touch discussionM01.txt
+	- pwd
+		- present working directory
+		- it allows us to see the current directory
+			syntax: pwd
+			example: ls
+
+MINI-ACTIVITY
+Create a file inside the activity folder, the fileName: activity-, introducing self
+	- name
+	- nickName
+	- 5 Top most quality
+	- 5 hobbies
+Secreenshot the GIT Bash and your file output and paste it in our chatbox 
