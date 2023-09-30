@@ -1,0 +1,22 @@
+Linked List
+- is basically a data structure for storing collection of data or items
+
+class Box{
+    int data;
+    Box next
+}
+
+head.data
+- the data of the head
+
+head
+- represents the first box
+
+Box next
+- reflects to the next box that is connected to a particular box
+
+[6|->]  ->  [3|->]  ->  [ |]
+self.head  head.next head.next.next
+head	   previous    current
+
+head.next = current.next
