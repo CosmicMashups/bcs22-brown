@@ -1,29 +1,3 @@
-"""
-Linked List
-- is basically a data structure for storing collection of data or items
-
-class Box{
-    int data;
-    Box next
-}
-
-head.data
-- the data of the head
-
-head
-- represents the first box
-
-Box next
-- reflects to the next box that is connected to a particular box
-
-[6|->]  ->  [3|->]  ->  [ |]
-self.head  head.next head.next.next
-head	   previous    current
-
-head.next = current.next
-"""
-
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -47,31 +21,18 @@ class LinkedList:
                 # 2nd Loop: current.next.next = current.next
             current.next = new_node
 
-    def sort(self):
-        current = self.head
-        while current.next:
-            current = current.next
-            if current == current.next:
-                return
-            elif current > current.next:
-                current.next = current
-                current = current.next
-            elif current < current.next:
-                current = current.next
-                current.next = current
-
     def display(self):
         current = self.head
         while current:
-            aHead = self.head.next.data # 3
-            bHead = self.head.next.next.data # 4
+            aTemp = self.head.next.data         # 3
+            bTemp = self.head.next.next.data    # 4
 
-            if current.data == 3:
-                print(bHead, end = " -> ")
+            if current.data == self.head.next.data:
+                print(bTemp, end = " -> ")
                 current = current.next
                 continue
-            elif current.data == 4:
-                print(aHead, end = " -> ")
+            elif current.data == self.head.next.next.data:
+                print(aTemp, end = " -> ")
                 current = current.next
                 continue
 
@@ -83,8 +44,8 @@ class LinkedList:
 
 # Input Values
 input_values = [6, 3, 4, 2, 1]
-# input_values.sort(reverse=True)
 
+# List to Linked List
 my_linked_list = LinkedList()
 for value in input_values:
     my_linked_list.insert(value)
