@@ -71,11 +71,14 @@ def checker(pal_input):
     clean_list = []
     # Stack() Instance: To store the characters of the input in a reversed arrangement
     reverse_stack = Stack()
+    # List: Containing the alphabet and numbers for cleaning
+    alphanumeric = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+                    's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     # For Loop: For each character in the variable "palindrome"
     for character in palindrome:
         # If the character is an alphabet or a number
-        if character.isalnum():
+        if character in alphanumeric:
             # Append the character to list "clean_list"
             clean_list.append(character)
             # Then, push the character to the stack "reverse_stack"
@@ -158,11 +161,13 @@ while True:
 
 """
 Reflection:
-    I learned that you can use Stack in Linked List to reverse the arrangement of data. By pushing each data into the Stack and
-    then popping them off afterwards in a different, the order in which the elements are popped off will be the reverse of the order
-    in which they were pushed. I didn't realize how you can use the Stack in such a way before I managed to finish this program.
+    I learned that you can use Stack in Linked List to reverse the arrangement of data. By pushing each data into the
+    Stack and then popping them off afterwards in a different, the order in which the elements are popped off will be
+    the reverse of the order in which they were pushed. I didn't realize how you can use the Stack in such a way before
+    I managed to finish this program.
     
-    I realized how crucial it is for you to have a full grasp of how a data structure like Stack and Linked List works so that you can use it
-    efficiently and more appropriately. Without this knowledge, you may leave yourself lost within the program that you made yourself. It feels easier
-    to code once you know how each line of code works and use by commenting its significance in the code.
+    I realized how crucial it is for you to have a full grasp of how a data structure like Stack and Linked List works
+    so that you can use it efficiently and more appropriately. Without this knowledge, you may leave yourself lost
+    within the program that you made yourself. It feels easier to code once you know how each line of code works and
+    use by commenting its significance in the code.
 """
