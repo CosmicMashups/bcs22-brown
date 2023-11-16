@@ -158,6 +158,11 @@ while True:
 
 """
 Reflection:
-    I learned that you can use Stack in Linked List to reverse the arrangement of data. By pushing each data into the
-    Stack and then popping them off. The order in which the elements are popped off will be the reverse of the order in which they were pushed.
+    I learned that you can use Stack in Linked List to reverse the arrangement of data. By pushing each data into the Stack and
+    then popping them off afterwards in a different, the order in which the elements are popped off will be the reverse of the order
+    in which they were pushed. I didn't realize how you can use the Stack in such a way before I managed to finish this program.
+    
+    I realized how crucial it is for you to have a full grasp of how a data structure like Stack and Linked List works so that you can use it
+    efficiently and more appropriately. Without this knowledge, you may leave yourself lost within the program that you made yourself. It feels easier
+    to code once you know how each line of code works and use by commenting its significance in the code.
 """
